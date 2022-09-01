@@ -1,14 +1,13 @@
 on:
   push:
-    branches:
-      - 'main'
+    # branches:
+    #   - 'main'
     tags:
       - 'v*.*.*'
 
 env:
   REGISTRY: docker.io
   REPOSITORY: devcontainer-cisco-dc
-  # IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   container_build_job:

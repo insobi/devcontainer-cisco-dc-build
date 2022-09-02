@@ -49,3 +49,6 @@ RUN curl -sSL -o /tmp/terraform.zip https://releases.hashicorp.com/terraform/${T
     && mkdir -p /root/.terraform.cache/plugin-cache \
     && rm -f /tmp/terraform.zip \
     && terraform -install-autocomplete
+
+RUN mv /etc/ssl/openssl.cnf /etc/ssl/openssl.cnf.bak
+COPY openssl.cnf /etc/ssl/openssl.cnf

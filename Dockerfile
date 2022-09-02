@@ -50,5 +50,6 @@ RUN curl -sSL -o /tmp/terraform.zip https://releases.hashicorp.com/terraform/${T
     && rm -f /tmp/terraform.zip \
     && terraform -install-autocomplete
 
+# To avoid error - "SSL: DH_KEY_TOO_SMALL] dh key too small" 
 RUN mv /etc/ssl/openssl.cnf /etc/ssl/openssl.cnf.bak
 COPY openssl.cnf /etc/ssl/openssl.cnf

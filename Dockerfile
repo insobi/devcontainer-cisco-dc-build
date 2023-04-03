@@ -40,7 +40,8 @@ RUN ansible-galaxy collection install \
         cisco.nso \
         cisco.nxos \
         cisco.ucs \
-        community.general
+        community.general \
+        community.vmware
 
 ENV TERRAFORM_VERSION=1.4.4
 RUN curl -sSL -o /tmp/terraform.zip https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip 2>&1 \

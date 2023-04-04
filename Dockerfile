@@ -31,7 +31,7 @@ RUN pip3 install ansible
 
 # Install ansible collection for cisco datacenter
 RUN ansible-galaxy collection install \
-        cisco.aci:==v2.5.0 \ 
+        cisco.aci:==2.5.0 \ 
         cisco.dcnm:==3.1.1 \
         cisco.intersight:==1.0.24 \
         cisco.ios:==4.4.0  \

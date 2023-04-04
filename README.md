@@ -6,10 +6,10 @@
 
 ## Installed tools
 
-| Tool      | Version                                  |
-| --------- | ---------------------------------------- |
-| Ansible   | (community) 6.7.0 `<br>` (core) 2.13.8 |
-| Terraform | 1.2.8                                    |
+| Tool      | Version                              |
+| --------- | ------------------------------------ |
+| Ansible   | (community) 6.7.0<br />(core) 2.13.8 |
+| Terraform | 1.2.8                                |
 
 ## Ansible Collections
 

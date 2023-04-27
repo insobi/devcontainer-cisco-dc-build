@@ -41,6 +41,7 @@ RUN ansible-galaxy collection install \
         cisco.nso \
         cisco.nxos \
         cisco.ucs \
+        cisco.nd \
         community.general
 
 ENV TERRAFORM_VERSION=1.4.4
@@ -52,5 +53,5 @@ RUN curl -sSL -o /tmp/terraform.zip https://releases.hashicorp.com/terraform/${T
     && terraform -install-autocomplete
 
 # To avoid error - "SSL: DH_KEY_TOO_SMALL] dh key too small" 
-RUN mv /etc/ssl/openssl.cnf /etc/ssl/openssl.cnf.bak
-COPY openssl.cnf /etc/ssl/openssl.cnf
+# RUN mv /etc/ssl/openssl.cnf /etc/ssl/openssl.cnf.bak
+# COPY openssl.cnf /etc/ssl/openssl.cnf

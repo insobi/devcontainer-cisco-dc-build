@@ -43,6 +43,7 @@ RUN ansible-galaxy collection install \
         cisco.nso \
         cisco.nxos \
         cisco.ucs \
+        cisco.nd \
         community.general
 
 ENV TERRAFORM_VERSION=1.4.4

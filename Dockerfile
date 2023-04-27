@@ -25,6 +25,7 @@ RUN pip3 install \
         jmespath \
         pyvmomi \
         jsonpath-ng \
+        requests_toolbelt \
         requests
 
 # Install ansible

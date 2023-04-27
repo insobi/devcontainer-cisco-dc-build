@@ -24,6 +24,7 @@ RUN pip3 install \
         paramiko \
         jmespath \
         pyvmomi \
+        jsonpath-ng \
         requests
 
 # Install ansible
